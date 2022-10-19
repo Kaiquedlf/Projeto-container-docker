@@ -24,7 +24,7 @@ Então tudo pronto, digite o seguinte comando:
 # Verificando o funcionamento do projeto.
 Logo após isso seu terminal ficara inutilizável pois o projeto não esta rodando em background.
 Pegue o ip publico da sua maquina virtual e coloque no google com :8080 no final (Ex: 168.192.1.1:8080).
-- ⚠️Lembre-se de liberar a porta 8080 para seu ip no security group está sua máquina virtual.⚠ 
+- ⚠️Lembre-se de liberar a porta 8080 para seu ip no security group que está sua máquina virtual.⚠ 
 
 
 
