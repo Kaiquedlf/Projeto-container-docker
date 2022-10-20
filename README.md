@@ -27,4 +27,4 @@ senha: admin_vp
 
 ou crie uma conta e teste.
 
-### Pronto, crie uma conta no site e verifique se está tudo ok. :)
+### Pronto, verifique se está tudo ok. :)
