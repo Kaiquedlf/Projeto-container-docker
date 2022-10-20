@@ -1,6 +1,8 @@
 # Projeto de conteinerização de app web java
 
-Esse é um projeto de conteinerização de um app web em java que usei para aprender um pouco sobre docker.
+Esse é um projeto de conteinerização de um app web em java que usei para aprender um pouco sobre docker. <br/>
+O projeto basicamente é uma conteinerização simples de uma aplicação web em java usando o docker e docker compose. <br/>
+Nele criei imagens docker customizadas para nginx, Tomcat e sql e 2 imagens oficiais de memcached e rabbitmq.
 
 # Requisitos
 - Uma máquina virtual com ubuntu 18.04. Nesse projeto usarei uma ec2 t2.small (Recomendo usar instância de no mínimo 2 gb de ram).
