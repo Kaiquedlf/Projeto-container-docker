@@ -1,13 +1,14 @@
 version: '3'
 services:
-  vprodb:
-    image: kaiquedlf/vprofiledb:V1
+  vprofileweb:
+    image: kaiquedlf/vprofileweb:V2
     ports:
-      - "3306:3306"
-    volumes:
-      - vprodbdata:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=vprodbpass
+      - "80:80"
+
+  vproapp:
+    image: kaiquedlf/vprofileapp:V2
+    ports:
+      - "8080:8080"
 
   vprocache01:
     image: memcached
@@ -22,18 +23,14 @@ services:
       - RABBITMQ_DEFAULT_USER=guest
       - RABBITMQ_DEFAULT_PASS=guest
 
-  vproapp:
-    image: kaiquedlf/vprofileapp:V1
+  vprodb:
+    image: kaiquedlf/vprofiledb:V2
     ports:
-      - "8080:8080"
+      - "3306:3306"
     volumes:
-      - vproappdata:/usr/local/tomcat/webapps
-
-  vproweb:
-    image: kaiquedlf/vprofileweb:V1
-    ports:
-      - "80:80"
+      - vprodbdata:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=vprodbpass
 
 volumes:
   vprodbdata: {}
-  vproappdata: {}
