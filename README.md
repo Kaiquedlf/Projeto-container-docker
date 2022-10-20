@@ -22,7 +22,7 @@ Pegue o ip publico da sua maquina virtual e coloque no google com :80 no final (
 
 Para logar na conta adm use:
 
-Login: admin_vp
+Login: admin_vp <br/>
 senha: admin_vp
 
 ou crie uma conta e teste.
